@@ -1,0 +1,240 @@
+############################################################################
+# arch/tricore/src/tc4xx/tc499/Make.defs
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.  The
+# ASF licenses this file to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance with the
+# License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+############################################################################
+
+include common/Make.defs
+
+SDK_CSRCS += AllowAccess.c
+SDK_CSRCS += Configurations/Ifx_Cfg_Ssw.c
+SDK_CSRCS += Configurations/Ifx_Cfg_SswBmhd.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxAdcCdspFw_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxAp_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxAsclin_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxDma_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxEgtm_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxGpt12_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxGtm_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_Impl/IfxPort_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAdc_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAdc_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAdc_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAdc_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAdc_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAsclin_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAsclin_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAsclin_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAsclin_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxAsclin_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxClock_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxClock_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxClock_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxClock_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxClock_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxEgtm_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxEgtm_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxEgtm_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxEgtm_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxEgtm_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGpt12_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGpt12_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGpt12_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGpt12_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGpt12_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGtm_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGtm_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGtm_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGtm_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxGtm_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxPort_PinMap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxPort_PinMap_LFBGA292_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxPort_PinMap_LFBGA292_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxPort_PinMap_LFBGA436_COM.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/_PinMap/IfxPort_PinMap_LFBGA436_EMS.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Ap/Std/IfxApApu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Ap/Std/IfxApProt.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Asclin/Asc/IfxAsclin_Asc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Asclin/Lin/IfxAsclin_Lin.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Asclin/Spi/IfxAsclin_Spi.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Asclin/Std/IfxAsclin.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Clock/Std/IfxClock.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Dma/Dma/IfxDma_Dma.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Dma/Std/IfxDma.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Atom/Pwm/IfxEgtm_Atom_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Atom/Timer/IfxEgtm_Atom_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Input/IfxEgtm_Input.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Pwm/IfxEgtm_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Atom.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Cmu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Dtm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Spe.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Tbu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Tim.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Std/IfxEgtm_Tom.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Tim/In/IfxEgtm_Tim_In.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Tim/Timer/IfxEgtm_Tim_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Tom/Pwm/IfxEgtm_Tom_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Tom/Timer/IfxEgtm_Tom_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Egtm/Trigger/IfxEgtm_Trigger.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Fce/Crc/IfxFce_Crc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Fce/Std/IfxFce.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gpt12/IncrEnc/IfxGpt12_IncrEnc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gpt12/Std/IfxGpt12.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Atom/Timer/IfxGtm_Atom_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Input/IfxGtm_Input.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Pwm/IfxGtm_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Atom.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Cmu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Dtm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Psm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Spe.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Tbu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Tim.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Std/IfxGtm_Tom.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Tim/In/IfxGtm_Tim_In.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Tim/Timer/IfxGtm_Tim_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Tom/Pwm/IfxGtm_Tom_Pwm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Tom/Timer/IfxGtm_Tom_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Gtm/Trigger/IfxGtm_Trigger.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Port/Io/IfxPort_Io.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Port/Std/IfxPort.c
+SDK_CSRCS += Libraries/iLLD/TC49A/CpuGeneric/Src/Std/IfxSrc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxCan_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxCpu_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxDre_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxEray_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxFlashCsrm_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxFlash_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxGeth_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxHsphy_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxHssl_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxI2c_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxMsc_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxPcie_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxPms_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxPsi5_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxPsi5s_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxQspi_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxSdmmc_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxSent_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxStm_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxVmt_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Impl/IfxXspi_cfg.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Lib/DataHandling/Ifx_CircularBuffer.asm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Lib/DataHandling/Ifx_CircularBuffer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Lib/DataHandling/Ifx_Fifo.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/_Lib/InternalMux/Ifx_InternalMux.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Can/Can/IfxCan_Can.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Can/Std/IfxCan.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Cpu/Std/IfxCpu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Cpu/Trap/IfxCpu_Trap.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Css/Crypto/IfxCss_Crypto.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Css/SecureCrypto/IfxCss_SecureCrypto.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Css/Std/IfxCss.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Css/Std/IfxCssSecure.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Dre/Dre/IfxDre_Dre.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Dre/Std/IfxDre.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Eray/Eray/IfxEray_Eray.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Eray/Std/IfxEray.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Flash/Std/IfxFlash.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Flash/Std/IfxFlashCsrm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Geth/Eth/IfxGeth_Eth.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Geth/Std/IfxGeth.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Hsphy/Hsphy/IfxHsphy_Hsphy.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Hsphy/Std/IfxHsphy.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Hssl/Hssl/IfxHssl_Hssl.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Hssl/Std/IfxHssl.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/I2c/I2c/IfxI2c_I2c.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/I2c/Std/IfxI2c.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Msc/Msc/IfxMsc_Msc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Msc/Std/IfxMsc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Pms/Std/IfxPmsEvr.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Pms/Std/IfxPmsPm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Ppuc/Std/IfxPpucCore.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Ppuc/Std/IfxPpucStu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Psi5/Psi5/IfxPsi5_Psi5.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Psi5/Std/IfxPsi5.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Psi5s/Psi5s/IfxPsi5s_Psi5s.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Psi5s/Std/IfxPsi5s.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Qspi/SpiMaster/IfxQspi_SpiMaster.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Qspi/SpiSlave/IfxQspi_SpiSlave.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Qspi/Std/IfxQspi.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Scu/Std/IfxScuEru.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Sdmmc/Emmc/IfxSdmmc_Emmc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Sdmmc/Sd/IfxSdmmc_Sd.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Sdmmc/Std/IfxSdmmc.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smm/Std/IfxSmm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smm/Std/IfxSmmRst.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smm/Std/IfxSmmSysMode.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smu/Smu/IfxSmu_Smu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smu/Std/IfxSmu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Smu/Std/IfxSmuStdby.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Stm/Std/IfxStm.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Stm/Timer/IfxStm_Timer.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Vmt/Std/IfxVmt.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Wtu/Std/IfxWtu.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Xspi/Spi/IfxXspi_Spi.c
+SDK_CSRCS += Libraries/iLLD/TC49A/Tricore/Xspi/Std/IfxXspi.c
+SDK_CSRCS += Libraries/Infra/Ipc/Tricore/ipc/src/IfxTcIpc.c
+SDK_CSRCS += Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Infra.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc0.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc1.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc2.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc3.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc4.c
+SDK_CSRCS += Libraries/Infra/Ssw/TC49A/Tricore/Ifx_Ssw_Tc5.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/If/SpiIf.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/StdIf/IfxStdIf_DPipe.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/StdIf/IfxStdIf_Pos.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/StdIf/IfxStdIf_Timer.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Comm/Ifx_Console.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_Crc.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_BitReverseTable.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_FftF32_TwiddleTable.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LowPassPt1F32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32_Table.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLSincosF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutLinearF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutSincosF32_Table.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_RampF32.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_BlackmanHarrisTable.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.c
+SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Time/Ifx_DateTime.c
+
+SDK_CSRCS := $(addprefix tc4xx/tc499/,$(SDK_CSRCS))
+
+
+VPATH += tc4xx/tc499
+VPATH += $(dir $(SDK_CSRCS))
+
+HEAD_CSRC += $(notdir $(SDK_CSRCS))
+
+EXTRA_LIBS += tc4xx/tc499/cinit.o
+LIBPATHS   += $(CURDIR)
