@@ -20,6 +20,26 @@
 
 include common/Make.defs
 
+SDK_INCDIR += Configurations
+SDK_INCDIR += Libraries/Infra/Sfr/TC49A/_Reg
+SDK_INCDIR += Libraries/Infra/Ssw/TC49A/Tricore
+SDK_INCDIR += Libraries/Infra/Platform
+SDK_INCDIR += Libraries/iLLD/TC49A/CpuGeneric
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore/Stm/Std
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore
+SDK_INCDIR += Libraries/iLLD/TC49A/CpuGeneric/Src/Std
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore/Cpu/Std
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore/Wtu/Std
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore/Cpu/Trap
+SDK_INCDIR += Libraries/Service/CpuGeneric
+SDK_INCDIR += Libraries/iLLD/TC49A/CpuGeneric/Ap/Std
+SDK_INCDIR += Libraries/iLLD/TC49A/Tricore/_Impl
+SDK_INCDIR += Libraries/iLLD/TC49A/CpuGeneric/_Impl
+SDK_INCDIR += Libraries/iLLD/TC49A/CpuGeneric/Clock/Std
+SDK_INCDIR += Libraries/Infra/Ipc/Tricore/ipc/inc
+SDK_INCDIR += Libraries/Infra/Ipc
+SDK_INCDIR += Libraries/Infra/Ipc/Common
+
 SDK_CSRCS += AllowAccess.c
 SDK_CSRCS += Configurations/Ifx_Cfg_Ssw.c
 SDK_CSRCS += Configurations/Ifx_Cfg_SswBmhd.c
@@ -229,6 +249,9 @@ SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Math/Ifx_WndF32_HannTable.c
 SDK_CSRCS += Libraries/Service/CpuGeneric/SysSe/Time/Ifx_DateTime.c
 
 SDK_CSRCS := $(addprefix tc4xx/tc499/,$(SDK_CSRCS))
+
+
+CFLAGS += $(addprefix ${INCDIR_PREFIX}tc4xx/tc499/,$(SDK_INCDIR))
 
 
 VPATH += tc4xx/tc499
